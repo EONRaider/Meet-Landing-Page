@@ -1,10 +1,10 @@
-# Frontend Mentor - Project solution
+# Frontend Mentor - Meet Landing Page solution
 
-[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/EONRaider/project?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/eonraider/project)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/EONRaider/meet-landing-page?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/eonraider/meet-landing-page)
 [![FrontendMentor](https://img.shields.io/badge/FrontendMentor-EONRaider-blue?style=flat-square)](https://www.frontendmentor.io/profile/EONRaider)
 
-This is a solution to the [Project]() challenge. Frontend Mentor challenges help you improve your coding skills by
-building realistic projects.
+This is a solution to the [Meet Landing Page](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR)
+challenge. Frontend Mentor challenges help you improve your coding skills by building realistic meet-landing-pages.
 
 ## Table of contents
 
@@ -17,19 +17,18 @@ building realistic projects.
 
 ## Overview
 
-A short description of the project
-
 ### Screenshot
 
 ### Links
 
 - [My Solution on Frontend Mentor]()
-- [Check the Live Site](https://eonraider-project.netlify.app/)
+- [Check the Live Site](https://eonraider-meet-landing-page.netlify.app/)
 
 ## My process
 
 1. I started with the markup on index.html, complying with HTML5 semantic tags and standards as much as possible.
-2. The styling provided by the project briefing was implemented first, followed by the classes I came up with on the
+2. The styling provided by the meet-landing-page briefing was implemented first, followed by the classes I came up with
+   on the
    markup.
 3. I used Figma to acquire all the right dimensions involved in the layout and implemented them in the appropriate CSS
    classes.
@@ -42,3 +41,8 @@ A short description of the project
 - Cube CSS methodology
 
 ### What I learned
+
+- I've noticed an increase in my proficiency with the Cube CSS methodology. Some of its most subtle details are not
+  obvious from the get go, especially rules related to separation of concerns between the various sections that compose
+  the
+  code.

@@ -51,6 +51,7 @@ img {
     --clr-blue-800: #87879D;
     --clr-purple-400: #855FB1;
     --clr-purple-600: #B18BDD;
+    --clr-purple-800: #D9B8FF;
     --clr-teal-400: #4D96A9;
 
     /* BUTTONS */
@@ -62,7 +63,7 @@ body {
 
 .content {
     width: var(--content-width);
-    height: var(--content-height);
+    /*height: var(--content-height);*/
 }
 
 header {
@@ -82,6 +83,12 @@ header {
 .flex-center-row {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.flex-space-row {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -149,6 +156,7 @@ button {
     border-radius: 29px;
     flex-shrink: 0;
     text-align: center;
+    font-family: "Red Hat Display", sans-serif;
     font-size: 16px;
     font-weight: 900;
     line-height: 26px;
@@ -227,6 +235,34 @@ button {
     line-height: 26px;
 }
 
+footer {
+    margin-top: var(--footer-margin-top);
+    background-image: var(--footer-bg-image);
+    background-repeat: no-repeat;
+    height: var(--footer-height);
+    padding: var(--footer-padding);
+    gap: var(--footer-gap);
+}
+
+.footer-text__title {
+    color: var(--clr-white-600);
+    font-weight: 900;
+    font-size: var(--footer-text-font-size-h2);
+    line-height: var(--footer-text-line-height-h2);
+}
+
+.footer-text__paragraph {
+    color: var(--clr-white-600);
+    font-weight: 500;
+    font-size: var(--footer-text-font-size-p);
+    line-height: var(--footer-text-line-height-p);
+}
+
+.footer__btn-download {
+    width: 193px;
+    background-color: var(--clr-purple-400);
+}
+
 /* EXCEPTIONS */
 button:hover {
     cursor: pointer;
@@ -236,8 +272,12 @@ button:hover {
     background-color: var(--clr-blue-400);
 }
 
-.hero-content__btn-description:hover {
+.hero-content__btn-description:hover, .footer__btn-download:hover {
     background-color: var(--clr-purple-600);
+}
+
+.footer__btn-download > .btn-download__version {
+    color: var(--clr-purple-800);
 }
 
 /* DESKTOP VERSION*/
@@ -275,6 +315,17 @@ button:hover {
         --features-text-font-size-p: 18px;
         --features-grid-gap: 30px;
         --features-grid-flow: column;
+
+        /* footer */
+        --footer-bg-image: url("../images/desktop/image-footer.png");
+        --footer-height: 308px;
+        --footer-padding: 165px;
+        --footer-margin-top: 184px;
+        --footer-gap: 92px;
+        --footer-text-font-size-h2: 40px;
+        --footer-text-line-height-h2: 44px;
+        --footer-text-font-size-p: 18px;
+        --footer-text-line-height-p: 26px;
     }
 
     .hero {
@@ -304,6 +355,14 @@ button:hover {
 
     .features-text__title {
         padding: 0 47px;
+    }
+
+    .footer-text-inner-wrapper {
+        column-gap: 125px;
+    }
+
+    .footer-text__title {
+        min-width: 350px;
     }
 }
 

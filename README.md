@@ -19,9 +19,11 @@ challenge. Frontend Mentor challenges help you improve your coding skills by bui
 
 ### Screenshot
 
+![Meet-Landing-Page](https://github.com/EONRaider/Meet-Landing-Page/assets/15611424/d2f26f76-3162-4965-af8a-5f36d184bf1f)
+
 ### Links
 
-- [My Solution on Frontend Mentor]()
+- [My Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-html5css3-meet-landing-page-7hbs0hmWgR)
 - [Check the Live Site](https://eonraider-meet-landing-page.netlify.app/)
 
 ## My process

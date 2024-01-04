@@ -194,6 +194,7 @@ button {
 }
 
 .features-text {
+    flex-direction: column;
     gap: var(--features-text-gap);
     margin-top: var(--features-text-margin-top);
     padding: var(--features-text-padding);

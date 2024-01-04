@@ -149,7 +149,7 @@ button {
     border-radius: 29px;
     flex-shrink: 0;
     text-align: center;
-    font-family: "Red Hat Display", sans-serif;
+    font-family: inherit;
     font-size: 16px;
     font-weight: 900;
     line-height: 26px;
@@ -230,12 +230,23 @@ button {
 }
 
 footer {
+    position: relative;
+    flex-direction: var(--footer-direction);
     margin-top: var(--footer-margin-top);
     background-image: var(--footer-bg-image);
     background-repeat: no-repeat;
     height: var(--footer-height);
     padding: var(--footer-padding);
     gap: var(--footer-gap);
+}
+
+.spacer__two {
+    position: absolute;
+    width: 56px;
+    margin: 0 auto;
+    top: -112px;
+    left: 0;
+    right: 0;
 }
 
 .footer-text__title {
@@ -248,8 +259,8 @@ footer {
 .footer-text__paragraph {
     color: var(--clr-white-600);
     font-weight: 500;
-    font-size: var(--footer-text-font-size-p);
-    line-height: var(--footer-text-line-height-p);
+    font-size: 18px;
+    line-height: 26px;
 }
 
 .footer__btn-download {
@@ -312,14 +323,13 @@ button:hover {
 
         /* footer */
         --footer-bg-image: url("../images/desktop/image-footer.png");
+        --footer-direction: row;
         --footer-height: 308px;
         --footer-padding: 165px;
         --footer-margin-top: 184px;
         --footer-gap: 92px;
         --footer-text-font-size-h2: 40px;
         --footer-text-line-height-h2: 44px;
-        --footer-text-font-size-p: 18px;
-        --footer-text-line-height-p: 26px;
     }
 
     .hero {
@@ -394,6 +404,16 @@ button:hover {
         --features-text-font-size-p: 16px;
         --features-grid-gap: 11px;
         --features-grid-flow: column;
+
+        /* footer */
+        --footer-bg-image: url("../images/tablet/image-footer.png");
+        --footer-direction: column;
+        --footer-height: 428px;
+        --footer-padding: 92px 98px 66px;
+        --footer-margin-top: 192px;
+        --footer-gap: 40px;
+        --footer-text-font-size-h2: 40px;
+        --footer-text-line-height-h2: 44px;
     }
 
     .hero {
@@ -422,6 +442,16 @@ button:hover {
 
     .features-text__title {
         padding: 0 63px;
+    }
+
+    .footer-text-inner-wrapper {
+        flex-direction: var(--footer-direction);
+        text-align: center;
+        row-gap: 32px;
+    }
+
+    .footer-text__title {
+        max-width: 457px;
     }
 }
 
@@ -459,6 +489,16 @@ button:hover {
         --features-text-font-size-p: 16px;
         --features-grid-gap: 25px;
         --features-grid-flow: row;
+
+        /* footer */
+        --footer-bg-image: url("../images/mobile/image-footer.png");
+        --footer-direction: column;
+        --footer-height: 428px;
+        --footer-padding: 92px 24px 72px;
+        --footer-margin-top: 176px;
+        --footer-gap: 32px;
+        --footer-text-font-size-h2: 32px;
+        --footer-text-line-height-h2: 36px;
     }
 
     .hero {
@@ -487,5 +527,11 @@ button:hover {
 
     .hero-content-buttons {
         flex-direction: column;
+    }
+
+    .footer-text-inner-wrapper {
+        flex-direction: var(--footer-direction);
+        text-align: center;
+        row-gap: 24px;
     }
 }

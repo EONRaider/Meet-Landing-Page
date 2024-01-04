@@ -80,21 +80,14 @@ header {
     margin-top: var(--flow-space);
 }
 
-.flex-center-row {
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.flex-space-row {
+.flex-space-between {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flex-space-column {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -184,6 +177,7 @@ button {
 }
 
 .features {
+    flex-direction: column;
     margin-top: var(--features-margin-top);
     padding: var(--features-padding);
 }
